@@ -8,6 +8,7 @@ div.container
     font-family: Raleway;
  font-family: Arial bold;
     margin: 0 auto;
+
 	padding: 2.5em 3em;
 	text-align: center;
 }
@@ -25,11 +26,21 @@ div.container a
     z-index: 0;
     cursor: pointer;
 }
+div.container a:nth-child(1) {margin: 0px -30px;}
+div.container a:nth-child(2) {margin: 0px 160px;}
+div.container a:nth-child(3) {margin: 0px 160px;}
+div.container a:nth-child(4) {margin: 0px -30px;}
+
 
 .green
 {
     background: #4caf50;
     background:white;
+}
+.teal
+{
+    background: #009688;
+    background:White;
 }
 
 
@@ -56,6 +67,38 @@ div.borderXwidth a:after
    bottom: 0px;
 }
 div.borderXwidth a:hover:after, div.borderXwidth a:hover:before
+{
+  opacity: 1;
+  width: 100%;
+}
+
+div.borderYtoX a:after
+{
+  position: absolute;
+  opacity: 0;
+  width: 0px;
+  height: 2px;
+  transition: all 0.3s;
+  transition: all 0.1s;
+  content: "";
+  background: #FFF;
+  background:black;
+  top: 90%;
+}
+
+div.borderYtoX a:before
+{
+  left: 1px;
+  top: 0px;
+
+}
+div.borderYtoX a:after
+{
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
 {
   opacity: 1;
   width: 100%;

@@ -1,0 +1,62 @@
+html, body
+{
+    margin: 0px;
+}
+
+div.container
+{
+    font-family: Raleway;
+ font-family: Arial bold;
+    margin: 0 auto;
+	padding: 2.5em 3em;
+	text-align: center;
+}
+
+div.container a
+{
+    color: #FFF;
+    color:black;
+    text-decoration: none;
+    font: 20px Raleway;
+    font: 20px Arial;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.green
+{
+    background: #4caf50;
+    background:white;
+}
+
+
+div.borderXwidth a:after
+{
+  position: absolute;
+  opacity: 0;
+  width: 0px;
+  height: 2px;
+  transition: all 0.3s;
+  transition: all 0.1s;
+  content: "";
+  background: #FFF;
+  background:black;
+}
+div.borderXwidth a:before
+{
+  left: 1px;
+  top: 0px;
+}
+div.borderXwidth a:after
+{
+   right: 0px;
+   bottom: 0px;
+}
+div.borderXwidth a:hover:after, div.borderXwidth a:hover:before
+{
+  opacity: 1;
+  width: 100%;
+}

@@ -1,6 +1,8 @@
 html, body
 {
     margin: 0px;
+
+    background-color: #333333;
 }
 
 div.container
@@ -10,11 +12,13 @@ div.container
   margin: 0 auto;
 	padding: 2.5em 3em;
 	text-align: center;
+  color: black;
+  background-color: #333333;
 }
 
 div.container a
 {
-    color: #FFF;
+    color: black;
     color:black;
     text-decoration: none;
     font: 20px Raleway;
@@ -25,12 +29,9 @@ div.container a
     z-index: 0;
     cursor: pointer;
 }
-div.container a:nth-child(1) {margin: 0px -20px;}
-div.container a:nth-child(2) {margin: 0px 150px;}
-div.container a:nth-child(3) {margin: 0px 150px;}
-div.container a:nth-child(4) {margin: 0px -20px;}
 
-
+div.logo i {
+}
 
 .green
 {
@@ -53,7 +54,7 @@ div.borderXwidth a:after
   transition: all 0.3s;
   transition: all 0.1s;
   content: "";
-  background: #FFF;
+  background: black;
   background:black;
 }
 div.borderXwidth a:before
@@ -81,7 +82,7 @@ div.borderYtoX a:after
   transition: all 0.3s;
   transition: all 0.1s;
   content: "";
-  background: #FFF;
+  background: black;
   background:black;
   top: 90%;
 }
@@ -102,4 +103,79 @@ div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
 {
   opacity: 1;
   width: 100%;
+}
+
+div.borderXwidth a:first-child:hover:after
+{
+  width: 70%;
+  right: 7px;
+}
+div.borderXwidth a:nth-child(2):hover:after
+{
+  width: 85%;
+  right: 17px;
+}
+div.borderXwidth a:nth-child(3):hover:after
+{
+  width: 100%;
+  left: 3px;  
+}
+#myVideo {
+  overflow: visible;
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: -300px;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  width: 100%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.KontaktUppgifter {
+  background-color: white;
+  margin: 45px;
+  padding: 45px;
+  margin-right: 530px;
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 20px;
+  background-color: white;
+}
+.MapsKarta {
+  background-color: white;
+  margin: 45px;
+  padding: 45px;
+  margin-right: 530px;
+  border-radius: 20px;
+}
+.Meny_Lista {
+  padding: 1px 125px;
+  margin: 45px;
 }

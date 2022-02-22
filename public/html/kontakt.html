@@ -8,33 +8,41 @@
   </head>
   <body>
     <div class="container green borderXwidth">
-      <a href="hem.html">HEM</a>
-      <a href="meny.html">MENY</a>
-      <a href="hitta oss.html">HITTA OSS</a>
-      <a href="kontakt.html">KONTAKT</a>
+      <a href="hem.html"style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HEM     &nbsp; </a>
+      <a href="meny.html"style="color:red;">&nbsp;&nbsp;MENY &nbsp;&nbsp;&nbsp; </a>
+      <a href="hem.html">
+        &nbsp; <img src="https://cdn.discordapp.com/attachments/368419960114118657/918490442134323220/Rityta_2.png" height="333px" width="950px" style="width: 306px; height: 151.5px;"></a>
+      <a href="hitta oss.html"style="color:red;">&nbsp;HITTA OSS</a>
+      <a href="kontakt.html"style="color:red;">  KONTAKT</a>
     </div>
 
-<img src="https://cdn.discordapp.com/attachments/368419960114118657/918490442134323220/Rityta_2.png" height="333px" width="612px">
 
-  <br>
-    <h1>Kontakta oss</h1>
-     <br>
+
+     <div class="KontaktUppgifter">
+
+       <h1>Kontakta oss</h1>
+
     <i class="material-icons md-36">phone</i> 020-139 23 12
  <br>
     <form action="SubmitAnswer"> <br>
        <label for="Table">Kontakta oss</label>
        <br>  <br>
-                 För Namn&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="Firstname" name="Firstname"> Efter Namn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Lastname" name="Lastname">
+                 Förnamn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="Firstname" name="Firstname"> Efternamn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Lastname" name="Lastname">
         <br>
         <br>
-            E-postadress <input type="text" id="E-postadress" name="E-postadress"> Brekräfta E-postadress <input type="text" id="BekräftaE-postadress" name="BrekräftaE-postadress">
+            E-postadress <input type="text" id="E-postadress" name="E-postadress"> Bekräfta E-postadress <input type="text" id="BekräftaE-postadress" name="BrekräftaE-postadress">
         <br> <br>
-            Meddelande <input type="text" id="E-postadress" name="E-postadress" style="width: 490px; height: 100px;" >
-       <input type="button" value="Skicka in">
+            Meddelande <input type="text" id="E-postadress" name="E-postadress" style="width: 415px; height: 100px;" >
+       <input type="button" onclick="Alert()"value="Skicka in">
+
    </form>
 
     </select>
-
+    <script>
+    function Alert() {
+      alert("Skickat och klart");
+    }
+    </script>
     <h3>Adress</h3>
     FacDonalds Huvudkontor<br>
     FacDonalds Burgers AB<br>
@@ -44,5 +52,6 @@
     SE-971 25 Luleå, Sverige<br>
     E-post: info@FacDonalds.se<br>
     Växel:+46 (0)920-890 00<br>
+     </div>
   </body>
 </html>
